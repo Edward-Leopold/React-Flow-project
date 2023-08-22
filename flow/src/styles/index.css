@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.react-flow__edge-text {
+    font-size: 20px;
+}
+
+.startNode{
+    border: 2px solid #1d1d1d;
+
+    background-color: #ccff66;
+    border-radius: 40px;
+    padding: 20px;
+    width: 200px;
+}
+
+.emailNode{
+    border: 2px solid #1d1d1d;
+
+    background-color: #66ccff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+}
+
+.conditionNode{
+    border: 2px solid #1d1d1d;
+
+    background-color: #ffcc66;
+    border-radius: 5px;
+    padding: 20px 5px;
+    width: 400px;
+}
+
+.waitNode{
+    border: 2px solid #1d1d1d;
+
+    background-color: #cccccc;
+    border-radius: 50%;
+    padding: 20px 10px;
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionNode{
+    border: 2px solid #1d1d1d;
+
+    background-color: #ccff66;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+}
