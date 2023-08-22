@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Flow-project/static/css/main.06147b50.css",
+    "main.js": "/React-Flow-project/static/js/main.f55d603a.js",
+    "index.html": "/React-Flow-project/index.html",
+    "main.06147b50.css.map": "/React-Flow-project/static/css/main.06147b50.css.map",
+    "main.f55d603a.js.map": "/React-Flow-project/static/js/main.f55d603a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06147b50.css",
+    "static/js/main.f55d603a.js"
+  ]
+}
