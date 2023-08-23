@@ -14,6 +14,65 @@ body{
     text-align: center;
 }
 
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.ReactFlowWrapper{
+    flex-grow: 1;
+    /* height: 100%; */
+}
+
+.dnd-aside{
+    padding: 10px;
+}
+
+.dndnode{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #1d1d1d;
+    cursor: grab;
+    user-select: none;
+
+    margin-right: 10px;
+}
+.dndnode:last-child{
+    margin-right: 0;
+}
+
+.startNode_sidebar{
+    background-color: #ccff66;
+}
+
+.conditionNode_sidebar{
+    background-color: #ffcc66;
+}
+
+.actionNode_sidebar{
+    background-color: #ccff66;
+}
+
+.emailNode_sidebar{
+    background-color: #66ccff;
+}
+
+.endNode_sidebar{
+    background-color: #ccff66;
+}
+
+.waitNode_sidebar{
+    background-color: #cccccc;
+}
+
+.desc{
+    font-weight: bold;
+}
+
 .react-flow__edge-text {
     font-size: 20px;
 }
