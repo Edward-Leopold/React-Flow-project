@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo, useRef } from 'react';
-import ReactFlow, { applyEdgeChanges, Controls, Background, applyNodeChanges, addEdge, ReactFlowProvider} from 'reactflow';
+import ReactFlow, { applyEdgeChanges, Controls, Background, applyNodeChanges, addEdge, ReactFlowProvider, MiniMap} from 'reactflow';
 import initialNodes from './nodes';
 import initialEdges from './edges';
 import ActionNode from "./nodeTypes/ActionNode";
@@ -95,6 +95,7 @@ export default function Flow() {
                         onDragOver={onDragOver}
                     >
                         <Background />
+                        <MiniMap nodeStrokeWidth={3} zoomable pannable />
                         <Controls />
                     </ReactFlow>
                 </div>
