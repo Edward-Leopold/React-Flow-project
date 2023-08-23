@@ -25,12 +25,32 @@ export default function Flow() {
         []
     );
 
+    const [nodes, setNodes] = useState(initialNodes);
+    const [edges, setEdges] = useState(initialEdges);
+
+    const onNodesChange = useCallback(
+        (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
+        [] 
+    );
+    const onEdgesChange = useCallback(
+        (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
+        []
+    );
+    
+    const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), []);
+
     return(
         <div style={{ width: '100vw', height: '100vh' }}>
             <ReactFlow
                 nodeTypes={nodeTypes}
-                nodes={initialNodes}
-                edges={initialEdges}
+                nodes={nodes}
+                onNodesChange={onNodesChange}
+                edges={edges}
+                onEdgesChange={onEdgesChange}
+                onConnect={onConnect}
+                defaultViewport={{
+                    x:0, y:0, zoom:1
+                }}
             >
                 <Background />
                 <Controls />
